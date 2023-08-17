@@ -1,0 +1,413 @@
+/* PlayfairDisplay fonts */
+@font-face {
+    font-family: PlayfairDisplay-Black;
+    src: url(/fonts/PlayfairDisplay-Black.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-BlackItalic;
+    src: url(/fonts/PlayfairDisplay-BlackItalic.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(/fonts/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-BoldItalic;
+    src: url(/fonts/PlayfairDisplay-BoldItalic.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-Italic;
+    src: url(/fonts/PlayfairDisplay-Italic.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url(/fonts/PlayfairDisplay-Regular.ttf);
+}
+/* Ubuntu fonts */
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: Ubuntu-BoldItalic;
+    src: url(/fonts/Ubuntu-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Italic;
+    src: url(/fonts/Ubuntu-Italic.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(/fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: Ubuntu-LightItalic;
+    src: url(/fonts/Ubuntu-LightItalic.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: Ubuntu-MediumItalic;
+    src: url(/fonts/Ubuntu-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Inconsolata;
+    src: url(/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+html, body {
+    height: 100%;
+    width: 1200px;
+    margin: 0;
+    /* line-height: 1; */
+    font-size: 14px;
+    background-color: #ffffff;
+    color: black;
+    font-family: Ubuntu-Regular;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 67px;
+}
+
+.col-1 {
+    font-family: Inconsolata;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 120px;
+}
+
+.nav-li {
+    display: flex;
+    width: 568px;
+    margin-left: 365px;
+    justify-content: right;
+    text-decoration: none;
+    align-items: end;
+}
+
+.header .nav-li li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-li>li>a {
+    text-decoration: none;
+    padding-left: 100px;
+    font-family: PlayfairDisplay;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+
+
+/* .social-left-block {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    padding: 30px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.span-padding {
+    padding: 5px;    
+} */
+
+
+
+/* Тело сайта */
+
+.main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1062px;
+    height: 600px;
+    margin: 0 67px;
+}
+
+.text-block {
+    /* width: 80%; */
+    margin: 0;
+    padding: 0;
+    color: #d9d6ce;
+    box-sizing: content-box;
+    margin: 0 150px;
+    
+}
+
+.text-block .p-h2 {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: #c7c1b6;
+}
+
+.text-block .p-h1 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: #626262;
+}
+
+.text-block p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+    margin-top: 35px;
+    
+}
+
+/* Группа фото с подписями */
+
+.group-foto {
+    margin: 130px 150px;
+    columns: 2;
+}
+
+.group-foto .col-left {
+    width: 420px;
+}
+
+.group-foto .col-right {
+    width: 420px;
+}
+
+.group-foto .p-h2 {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    color: #c7c1b6;
+    margin: 30px 0;
+}
+
+.group-foto .p-h1 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: #626262;
+}
+
+.group-foto p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+}
+
+/* Разделитель + плейсхолдер */
+
+.separator {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 285px;
+    width: 1200px;
+    display: block;
+}
+
+.separator .p-h2 {
+    /* margin-bottom: 30px;
+    margin-top: 60px; */
+    padding: 30px 0 0;
+    height: 142.5px;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+
+.img-icon {
+    width: 32px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 770px;
+    margin-top: -18px;
+}
+.img-line {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 400px;
+}
+
+
+
+/* input {
+    width: 400px;
+} */
+
+.text-field {
+    width: auto;
+    padding: 0;
+    border: 0;
+    margin-left: 400px;
+    font-size: 14px;
+    font-family: PlayfairDisplay-Regular;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+
+.group-photo2 {
+    width: 840 px;
+    margin: 130px 150px;
+    columns: 2;
+}
+
+.group-photo2 .p-h2 {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    color: #c7c1b6;
+    margin: 30px 0;
+}
+
+.group-photo2 .p-h1 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: #626262;
+}
+
+.group-photo2 p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+}
+
+.button {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 520px;
+    margin-bottom: 130px;
+    border-width: 1px;
+    border-style: solid;
+    color: gray;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 20px;
+}
+
+/* Footer, он же подвал */
+
+.footer .footer-social {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100px;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    align-items: center;
+    color: black;
+    flex: 0 0 auto;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer-social .social-right-block {
+    display: inline-flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.footer-social .social-right-block li {
+ padding-right: 20px;
+}
+
+.footer-social .social-right-block img {
+    justify-content: space-between;
+    padding: 0 5px;
+    color: black;
+}
+
+.footer-social .social-right-block li a {
+    justify-content: space-between;
+    padding: 0 10px;
+    color: black;
+}
+
+.footer-social .margin-left {
+    margin-left: 150px;
+}
+
+.footer-social .margin-left {
+    /* width: 30%; */
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.footer-social li a {
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: black;
+}
+ 
+/* mobile 768px */
+/* @media screen and (max-width: 768px) {
+    .block-768,
+    .block-570,
+    .block-370 {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        float: none;
+        display: flex;
+    }
+
+    .md-1,
+    .md-2,
+    .md-4 {
+        float: left;
+        margin: 0 1.25%;
+        
+    }
+
+    .md-1 {
+        width: 5.833333%;
+    }
+
+    .md-2 {
+        width: 14.166666%;
+    }
+
+    .md-4 {
+        width: 30.833333%;
+    }
+
+    .items-nowrap {
+        flex-wrap: nowrap;
+    }
+} */
