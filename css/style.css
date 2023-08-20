@@ -1,78 +1,328 @@
 /* PlayfairDisplay fonts */
 @font-face {
     font-family: PlayfairDisplay-Black;
-    src: url(/fonts/PlayfairDisplay-Black.ttf);
+    src: url(/git.practice/fonts/PlayfairDisplay-Black.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-BlackItalic;
-    src: url(/fonts/PlayfairDisplay-BlackItalic.ttf);
+    src: url(/git.practice/fonts/PlayfairDisplay-BlackItalic.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-Bold;
-    src: url(/fonts/PlayfairDisplay-Bold.ttf);
+    src: url(/git.practice/fonts/PlayfairDisplay-Bold.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-BoldItalic;
-    src: url(/fonts/PlayfairDisplay-BoldItalic.ttf);
+    src: url(/git.practice/fonts/PlayfairDisplay-BoldItalic.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-Italic;
-    src: url(/fonts/PlayfairDisplay-Italic.ttf);
+    src: url(/git.practice/fonts/PlayfairDisplay-Italic.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-Regular;
-    src: url(/fonts/PlayfairDisplay-Regular.ttf);
+    src: url(/git.practice/fonts/PlayfairDisplay-Regular.ttf);
 }
 /* Ubuntu fonts */
 @font-face {
     font-family: Ubuntu-Bold;
-    src: url(/fonts/Ubuntu-Bold.ttf);
+    src: url(/git.practice/fonts/Ubuntu-Bold.ttf);
 }
 @font-face {
     font-family: Ubuntu-BoldItalic;
-    src: url(/fonts/Ubuntu-BoldItalic.ttf);
+    src: url(/git.practice/fonts/Ubuntu-BoldItalic.ttf);
 }
 @font-face {
     font-family: Ubuntu-Italic;
-    src: url(/fonts/Ubuntu-Italic.ttf);
+    src: url(/git.practice/fonts/Ubuntu-Italic.ttf);
 }
 @font-face {
     font-family: Ubuntu-Light;
-    src: url(/fonts/Ubuntu-Light.ttf);
+    src: url(/git.practice/fonts/Ubuntu-Light.ttf);
 }
 @font-face {
     font-family: Ubuntu-LightItalic;
-    src: url(/fonts/Ubuntu-LightItalic.ttf);
+    src: url(/git.practice/fonts/Ubuntu-LightItalic.ttf);
 }
 @font-face {
     font-family: Ubuntu-Medium;
-    src: url(/fonts/Ubuntu-Medium.ttf);
+    src: url(/git.practice/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
     font-family: Ubuntu-MediumItalic;
-    src: url(/fonts/Ubuntu-MediumItalic.ttf);
+    src: url(/git.practice/fonts/Ubuntu-MediumItalic.ttf);
 }
 @font-face {
     font-family: Ubuntu-Regular;
-    src: url(/fonts/Ubuntu-Regular.ttf);
+    src: url(/git.practice/fonts/Ubuntu-Regular.ttf);
 }
 @font-face {
     font-family: Inconsolata;
-    src: url(/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+    src: url(/git.practice/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 
-html, body {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: PlayfairDisplay, Regular;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+/* html, body {
     height: 100%;
     width: 1200px;
     margin: 0;
-    /* line-height: 1; */
     font-size: 14px;
     background-color: #ffffff;
     color: black;
     font-family: Ubuntu-Regular;
     flex-direction: column;
     min-height: 100vh;
+} */
+
+.header {
+
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 65px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1 {
+    font-family: Inconsolata;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+} 
+
+/*.nav-li {
+     display: flex;
+    width: 568px; 
+    margin-left: 365px;
+    justify-content: right;
+    text-decoration: none; 
+    align-items: end; 
+} */
+
+/* .header .nav-li li {
+    text-decoration: none;
+    list-style-type: none;
+} */
+
+/* .nav-li>li>a {
+    padding-left: 100px;
+    font-family: PlayfairDisplay;
+    font-size: 14px;
+    color: #a1a1a1;
+} */
+
+/* Тело сайта */
+
+.main-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.img-1 {
+    width: 100%;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1000px;
+    color: #d9d6ce;
+}
+
+.text-block .p-h2 {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    color: #c7c1b6;
+}
+
+.text-block .p-h1 {
+    font-family: PlayfairDisplay-Regular;
+    color: #626262;
+}
+
+.text-block p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+}
+
+
+/* Группа фото с подписями */
+
+.group-foto, .group-photo2 {
+    display: flex;
+    flex-basis: auto;
+    width: 100%;
+    max-width: 1000px;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    columns: 2;
+}
+
+.photo-padding {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.col-left {
+    max-width: 420px;
+}
+
+.col-right {
+    max-width: 420px;
+}
+
+.group-foto .p-h2 {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    color: #c7c1b6;
+    margin: 30px 0;
+}
+
+.group-foto .p-h1 {
+    font-family: PlayfairDisplay-Regular;
+    color: #626262;
+}
+
+.group-foto p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+}
+
+/* Разделитель + плейсхолдер */
+
+.separator {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #f0f0f0;
+}
+
+.castle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    height: 285px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.separator .p-h2 {
+    display: flex;
+    align-items: center;
+    height: 142.5px;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: black;
+    background-color: #f0f0f0;
+}
+
+
+.img-icon {
+    max-width: 32px;
+    height: 17px;
+    margin-left: 370px;
+    margin-top: -18px;
+}
+.img-line {
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+
+.text-field {
+    display: flex;
+    max-width: 380px;
+    padding: 0;
+    border: 0;
+    /* margin-left: 400px; */
+    margin: 0 auto;
+    font-size: 14px;
+    /* text-align: left; */
+    font-family: PlayfairDisplay-Regular;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+
+/* .group-photo2 {
+    /* width: 840 px;
+    margin: 130px 150px;
+    columns: 2; 
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+} */
+
+.group-photo2 .p-h2 {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    color: #c7c1b6;
+    margin: 30px 0;
+    /* margin: 0 auto; */
+}
+
+.p-h1 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: #626262;
+}
+
+.group-photo2 p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+}
+
+.button {
+    max-width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 520px;
+    margin-bottom: 130px; */
+    margin: 100px auto;
+    border-width: 1px;
+    border-style: solid;
+    color: gray;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 20px;
+}
+
+
 
 .footer {
     width: 100%;
@@ -81,43 +331,10 @@ html, body {
     flex-direction: column;
 }
 
-.container .header {
-    width: 1200px;
-    display: flex;
-    align-items: center;
-    margin: 67px;
-}
 
-.col-1 {
-    font-family: Inconsolata;
-    font-size: 30px;
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 120px;
-}
 
-.nav-li {
-    display: flex;
-    width: 568px;
-    margin-left: 365px;
-    justify-content: right;
-    text-decoration: none;
-    align-items: end;
-}
 
-.header .nav-li li {
-    text-decoration: none;
-    list-style-type: none;
-}
 
-.nav-li>li>a {
-    text-decoration: none;
-    padding-left: 100px;
-    font-family: PlayfairDisplay;
-    font-size: 14px;
-    color: #a1a1a1;
-}
 
 
 
@@ -135,184 +352,10 @@ html, body {
 
 
 
-/* Тело сайта */
-
-.main-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1062px;
-    height: 600px;
-    margin: 0 67px;
-}
-
-.text-block {
-    /* width: 80%; */
-    margin: 0;
-    padding: 0;
-    color: #d9d6ce;
-    box-sizing: content-box;
-    margin: 0 150px;
-    
-}
-
-.text-block .p-h2 {
-    font-family: Ubuntu-Light;
-    font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: 0;
-    color: #c7c1b6;
-}
-
-.text-block .p-h1 {
-    font-family: PlayfairDisplay-Regular;
-    font-size: 30px;
-    color: #626262;
-}
-
-.text-block p {
-    font-family: PlayfairDisplay-Regular;
-    font-size: 14px;
-    color: black;
-    margin-top: 35px;
-    
-}
-
-/* Группа фото с подписями */
-
-.group-foto {
-    margin: 130px 150px;
-    columns: 2;
-}
-
-.group-foto .col-left {
-    width: 420px;
-}
-
-.group-foto .col-right {
-    width: 420px;
-}
-
-.group-foto .p-h2 {
-    font-family: Ubuntu-Light;
-    font-size: 14px;
-    color: #c7c1b6;
-    margin: 30px 0;
-}
-
-.group-foto .p-h1 {
-    font-family: PlayfairDisplay-Regular;
-    font-size: 30px;
-    color: #626262;
-}
-
-.group-foto p {
-    font-family: PlayfairDisplay-Regular;
-    font-size: 14px;
-    color: black;
-}
-
-/* Разделитель + плейсхолдер */
-
-.separator {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    height: 285px;
-    width: 1200px;
-    display: block;
-}
-
-.separator .p-h2 {
-    /* margin-bottom: 30px;
-    margin-top: 60px; */
-    padding: 30px 0 0;
-    height: 142.5px;
-    font-family: PlayfairDisplay-Regular;
-    font-size: 30px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-}
-
-
-.img-icon {
-    width: 32px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 770px;
-    margin-top: -18px;
-}
-.img-line {
-    width: 400px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 400px;
-}
 
 
 
-/* input {
-    width: 400px;
-} */
 
-.text-field {
-    width: auto;
-    padding: 0;
-    border: 0;
-    margin-left: 400px;
-    font-size: 14px;
-    font-family: PlayfairDisplay-Regular;
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;
-}
-
-
-.group-photo2 {
-    width: 840 px;
-    margin: 130px 150px;
-    columns: 2;
-}
-
-.group-photo2 .p-h2 {
-    font-family: Ubuntu-Light;
-    font-size: 14px;
-    color: #c7c1b6;
-    margin: 30px 0;
-}
-
-.group-photo2 .p-h1 {
-    font-family: PlayfairDisplay-Regular;
-    font-size: 30px;
-    color: #626262;
-}
-
-.group-photo2 p {
-    font-family: PlayfairDisplay-Regular;
-    font-size: 14px;
-    color: black;
-}
-
-.button {
-    width: 160px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 520px;
-    margin-bottom: 130px;
-    border-width: 1px;
-    border-style: solid;
-    color: gray;
-    font-family: PlayfairDisplay-Regular;
-    font-size: 20px;
-}
 
 /* Footer, он же подвал */
 
@@ -360,7 +403,7 @@ html, body {
 }
 
 .footer-social .margin-left {
-    /* width: 30%; */
+    width: 30%; 
     display: flex;
     text-decoration: none;
     list-style-type: none;
@@ -373,41 +416,91 @@ html, body {
     justify-content: space-between;
     padding: 0 10px;
     color: black;
-}
+} 
  
-/* mobile 768px */
-/* @media screen and (max-width: 768px) {
-    .block-768,
-    .block-570,
-    .block-370 {
-        width: auto;
-        min-height: auto;
+/* mobile 1050px */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .p-h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 1050px;
+    }
+    .col-left {
+        padding-right: 50px;
+    }
+    .p-h1 {
+        font-size: 28px;
+    }
+    .separator .p-h2 {
+        font-size: 28px;
+    }
+    .container {
+        padding: 45px 45px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        max-width: 850px;
+    
+    }
+    .col-left {
+        padding-right: 30px;
+    }
+    .p-h1 {
+        font-size: 24px;
+    }
+    .separator .p-h2 {
+        font-size: 24px;
+    }
+    .container {
+        padding: 35px 35px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .col-1 {
+        font-size: 18px;
+    }
+    .nav {
+        font-size: 0.8em;
+    }
+    .container {
+        max-width: 550px;
+    }
+    .col-left {
+        padding-right: 20px;
+    }
+    .p-h1 {
+        font-size: 20px;
+    }
+    .separator .p-h2 {
+        font-size: 20px;
+    }
+    .container {
+        padding: 25px 25px 0;
+    }
+    .footer-social {
+        width: 100%;
         margin: 0;
-        float: none;
-        display: flex;
+        padding: 0;
     }
-
-    .md-1,
-    .md-2,
-    .md-4 {
-        float: left;
-        margin: 0 1.25%;
-        
+    .footer-social .margin-left, .footer-social .li-a {
+        margin-left: 20px;
+        width: auto;
+        flex-direction: column;
+        align-items: last baseline;
     }
-
-    .md-1 {
-        width: 5.833333%;
+    .footer-social .li-a {
+        padding: 0 auto;
     }
-
-    .md-2 {
-        width: 14.166666%;
-    }
-
-    .md-4 {
-        width: 30.833333%;
-    }
-
-    .items-nowrap {
-        flex-wrap: nowrap;
-    }
-} */
+    
+}
