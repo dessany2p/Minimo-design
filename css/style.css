@@ -1,14 +1,14 @@
 @font-face {
     font-family: PlayfairDisplay-Regular;
-    src: url(/git.practice/fonts/PlayfairDisplay-Regular.ttf);
+    src: url(/fonts/PlayfairDisplay-Regular.ttf);
 }
 @font-face {
     font-family: Ubuntu-Light;
-    src: url(/git.practice/fonts/Ubuntu-Light.ttf);
+    src: url(/fonts/Ubuntu-Light.ttf);
 }
 @font-face {
     font-family: Inconsolata;
-    src: url(/git.practice/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+    src: url(/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 
 a {
@@ -155,7 +155,7 @@ input:focus {
 }
 #text1 {
     background-position: right;
-    background-image: url(/git.practice/images/send-icon.png);
+    background-image: url(/images/send-icon.png);
     background-repeat: no-repeat;
     padding: 5px;
 }
