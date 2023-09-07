@@ -14,21 +14,25 @@
 a {
     text-decoration: none;
 }
+
 ul, li {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
 body {
     font-family: PlayfairDisplay, Regular;
     font-size: 14px;
     color: #a1a1a1;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 65px 65px 0;
 }
+
 .nav {
     display: flex;
     max-width: 1200px;
@@ -36,10 +40,12 @@ body {
     justify-content: space-between;
     padding: 0 20px;
 }
+
 .nav-li {
     display: flex;
     margin-left: 50px;
 }
+
 .col-1 {
     font-family: Inconsolata;
     font-size: 30px;
@@ -48,6 +54,7 @@ body {
     position: relative;
     margin-left: 0;
 } 
+
 .col-2 {
     cursor: pointer;
     display: flex;
@@ -63,13 +70,16 @@ body {
     justify-content: space-between;
     max-width: 1200px;
 }
+
 .main-image {
     width: 100%;
 }
+
 .img {
     max-width: 100%;
     object-fit: contain;
 }
+
 .text-block {
     display: flex;
     flex-direction: column;
@@ -78,16 +88,19 @@ body {
     max-width: 1000px;
     color: #d9d6ce;
 }
+
 .p-header {
     font-family: Ubuntu-Light;
     font-size: 14px;
     color: #c7c1b6;
 }
+
 .p-name {
     font-family: PlayfairDisplay-Regular;
     color: #626262;
     font-size: 30px;
 }
+
 p {
     font-family: PlayfairDisplay-Regular;
     font-size: 14px;
@@ -100,6 +113,7 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
+
 .photo-item {
     width: 50%;
     max-width: 420px;
@@ -114,6 +128,7 @@ p {
     padding: 40px 0;
     background-color: #f0f0f0;
 }
+
 .separator-up {
     display: flex;
     width: 40%;
@@ -123,6 +138,7 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
 .separator-down {
     display: flex;
     width: 40%;
@@ -131,7 +147,56 @@ p {
     padding: 15px 0;
     height: 15px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    max-width: 400px
+}
+
+.text-field {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.box-triangle {
+    position: relative;
+    display: inline-flex;
+}
+
+.triangle {
+    border-radius: 50%; 
+    border-color: transparent;
+    width: 15px;
+    height: 15px;
+}
+
+.triangle::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #a1a1a1;
+    border-right: 2px solid #a1a1a1;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transform: rotate(45deg);
+    cursor: pointer;
+} 
+
+.triangle:hover {
+    border-color: aqua;
+    transition: 1s ease-in-out;
+}
+
+input[type=text] {
+    padding:5px; 
+    border: none;
+    background: transparent;
+    outline:none;
 }
 
 .p-h2 {
@@ -140,25 +205,14 @@ p {
     color: black;
     background-color: #f0f0f0;
 }
-.text-field {
-    border: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-    margin: 0;
-    font-size: 14px;
-    font-family: PlayfairDisplay-Regular;
-    flex-direction: column;
-    background-color: #f0f0f0;
-}
-input:focus {
-    outline: none;
-}
+
 #text1 {
     background-position: right;
     background-image: url(/images/send-icon.png);
     background-repeat: no-repeat;
     padding: 5px;
 }
+
 .button {
     max-width: 160px;
     height: 60px;
@@ -190,26 +244,31 @@ input:focus {
     bottom: 0;
     margin-top: auto;
 }
+
 .footer-left-block {
     margin-left: 150px;
      display: flex;
     justify-content:  flex-start;
 }
+
 .footer-li {
     margin-left: 15px;
     padding: 0;
     cursor: pointer;
 }
+
 .footer-right-block {
     display: inline-flex;
     margin-right: 70px;
 }
+
 .footer-img {
     justify-content: space-between;
     padding: 0 15px;
     color: black;
     cursor: pointer;
 }
+
 .footer-li-right {
     justify-content: space-between;
     padding: 0 20px;
@@ -228,6 +287,7 @@ input:focus {
     .p-h2, .p-name {
         font-size: 24px;
     }
+
     .photo-item {
         max-width: 380px;
     }
@@ -246,6 +306,7 @@ input:focus {
     .p-name {
         font-size: 24px;
     }
+
     .photo-item {
         max-width: 350px;
     }
@@ -266,6 +327,7 @@ input:focus {
         padding: 0;
         margin: 0 auto;
     }
+
     .p-name {
         font-size: 24px;
     }
@@ -275,6 +337,7 @@ input:focus {
     .img {
         width: auto;
     }
+
     .group-photo {
         width: 100%;
         flex-direction: column;
@@ -301,6 +364,7 @@ input:focus {
     .nav-li {
         margin: 0 15px;
     }
+
     .p-h2, .p-name {
         font-size: 20px;
     }
@@ -310,6 +374,7 @@ input:focus {
     .text-field {
         font-size: 10px;
     }
+
     .footer-left-block {
         margin-left: 30px;
     }
@@ -334,6 +399,7 @@ input:focus {
         margin: 0 auto;
         padding: 10px 0;
     }
+
     html {
         overflow-x: hidden;
     }
@@ -351,3 +417,6 @@ input:focus {
         justify-content: center;
     }
 }
+
+/* END 
+Thx for watch*/
