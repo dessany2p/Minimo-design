@@ -1,0 +1,428 @@
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url(/fonts/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(/fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: Inconsolata;
+    src: url(/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: PlayfairDisplay, Regular;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 65px 0;
+}
+
+.nav {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-li {
+    display: flex;
+    margin-left: 50px;
+}
+
+.col-1 {
+    font-family: Inconsolata;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 0;
+} 
+
+.col-2 {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    margin-right: 0;
+}
+
+/* _____________ Тело сайта */
+
+.main-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1000px;
+    color: #d9d6ce;
+}
+
+.p-header {
+    font-family: Ubuntu-Light;
+    font-size: 14px;
+    color: #c7c1b6;
+}
+
+.p-name {
+    font-family: PlayfairDisplay-Regular;
+    color: #626262;
+    font-size: 30px;
+}
+
+p {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    color: black;
+}
+
+/* _________ Группа фото с подписями */
+
+.group-photo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-item {
+    width: 50%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* Разделитель + плейсхолдер */
+
+.separator-block {
+    max-width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.separator-up {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.separator-down {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 0;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px
+}
+
+.text-field {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.box-triangle {
+    position: relative;
+    display: inline-flex;
+}
+
+.triangle {
+    /* border-radius: 50%; 
+    border-color: transparent;*/
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/telegram_icon.svg);
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+/* .triangle::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #a1a1a1;
+    border-right: 2px solid #a1a1a1;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transform: rotate(45deg);
+    cursor: pointer;
+} 
+
+.triangle:hover {
+    border-color: aqua;
+    transition: 1s ease-in-out;
+} */
+
+input[type=text] {
+    padding:5px; 
+    border: none;
+    background: transparent;
+    outline:none;
+}
+
+.p-h2 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 30px;
+    color: black;
+    background-color: #f0f0f0;
+}
+
+#text1 {
+    background-position: right;
+    background-image: url(/images/send-icon.png);
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.button {
+    max-width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    border-width: 1px;
+    border-style: solid;
+    color: gray;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer, он же подвал */
+
+.footer {
+    flex: 0 0 auto;
+    bottom: 0;
+    margin-top: auto;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 100px;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 14px;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+}
+
+.footer-left-block {
+    display: flex;
+}
+
+.footer-li {
+    margin-left: 15px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footer-right-block {
+    display: inline-flex;
+}
+
+.footer-img {
+    justify-content: space-between;
+    padding: 0 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-li-right {
+    justify-content: space-between;
+    padding: 0 20px;
+    color: black;
+    cursor: pointer;
+}
+
+/* adaptive css. */
+
+@media (max-width: 1100px) {
+    .container {    
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 60px 0;
+    }
+    .p-h2, .p-name {
+        font-size: 24px;
+    }
+
+    .photo-item {
+        max-width: 380px;
+    }
+    .photo-padding {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {    
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 50px 50px 0;
+    }
+    .p-name {
+        font-size: 24px;
+    }
+
+    .photo-item {
+        max-width: 350px;
+    }
+    .photo-padding {
+        max-width: 350px;
+        width: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {    
+        max-width: 800px;
+        margin: 40px;
+        padding: 0;
+    }
+    .nav {
+        max-width: 800px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .p-name {
+        font-size: 24px;
+    }
+    .photo-item {
+        width: 100%
+    }
+    .img {
+        width: auto;
+    }
+
+    .group-photo {
+        width: 100%;
+        flex-direction: column;
+    }
+    p {
+        width: 100%;
+    }
+    .text-block {
+        padding: 0;
+    }
+    .separator-up, .separator-down {
+        width: 50%;
+    }
+}
+@media (max-width: 665px) {
+    .container {    
+        max-width: 600px;
+        margin: 20px;
+        padding: 0;
+    }
+    .nav {
+        max-width: 600px;
+    }
+    .nav-li {
+        margin: 0 15px;
+    }
+
+    .p-h2, .p-name {
+        font-size: 20px;
+    }
+    .text-block {
+        padding: 0;
+    }
+    .text-field {
+        font-size: 10px;
+    }
+
+    .footer-left-block {
+        margin-left: 30px;
+    }
+    .footer-li-right, .footer-img {
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+    .separator-up, .separator-down {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .button {
+        margin: 30px auto;
+    }
+    .footer {
+        width: 100%;
+        
+    }
+    .footer-right-block, .footer-left-block {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+    .col-2 {
+        flex-wrap: wrap;
+        position: relative;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .nav-li {
+        margin: 0 10px;
+    }
+    .footer .footer-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* END 
+Thx for watch*/
